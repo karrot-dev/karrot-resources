@@ -1,0 +1,83 @@
+# Design process for public activities
+
+Groups are the basic units of Karrot. There won't be much to do if you come to Karrot for the first time and don't apply to join a group or create your own group. You're either inside or outside a group. This is of course not how real life works, and we figured we wanted to support groups in interacting with different external actors. That could be people who benefit from the group's common resources, like people attending food waste distributions, or people wanting to help out a group now and then, but not necessarily being a full member. We called this topic "breaking the silo" and set out to design a feature(s) to serve this overarching purpose. How did we go about it?
+
+## Background
+
+This was our second experience in designing a new feature, following a more or less structured design process. The first one was doing the agreements features, which took many many meetings and about 8 months to conclude. This one was intentionally a bit shorter, because we were a bit more realistic about what could be implemented as a final result. In other words, we had many great ideas and designs but our developing capacity is currently very limited. Nonetheless it was important to let concepts take their time to mature through our discussions and experiences.
+
+The tricky thing about turning big topics like group governance or group interaction with the public is to actually narrow down to specific solutions, identifying the one(s) that will have probably the biggest impact and actually be used if implemented. At the end we're left with a whole set of solutions that we would like to implement, but having to start with the most basic version of the most promising solution and later build upon that with time.
+
+## Length and stages of our process
+
+All in all it took us more or less 10 sessions from May to August in order to come up with a design ready for implementation. The design process is basically structured like Google's design sprint, except that we don't do it as a sprint of five days (hence calling it process), so the days correspond to the following stages:
+
+- Define the challenge
+- Sketch
+- Decide on best idea(s)
+- Prototype
+- Test
+
+### Define the challenge
+
+Defining the challenge of breaking the silo turned out to be quite a fun discussion and many people took part in the first meeting. We basically asked ourselves what we mean by breaking the silo, then we established **long term goals**, for example *enable groups to reach out to other people and create/strengthen relations with them* and **tricky questions**, for example *how to avoid “consumer-mode” interactions with these wider networks?*. We even went beyond the idea of better connecting a group and its wider network to consider how groups might create connections with each other and even with the Karrot team as a project. A **mind map** became a useful tool to make sense of all of this, visualizing all the connections and later choosing - **voting with dots** on the map - where to put the emphasis.
+
+![mindmap](https://community.karrot.world/uploads/default/original/1X/19f281135bb70a1e1ba03a46df03e5148e5f20db.jpeg)
+
+### Sketch
+
+Sketching is probably the most fun part and usually what people imagine by the designing a feature. Here the focus is on **quick sketches** to expose an idea, and not how beautiful one can draw. 15 to 20 minutes in silence, each one doing a sketch of one or more ideas, was enough to provide us with some material for discussion. What do we like about a certain idea?
+
+Some of the sketches displayed the following ideas:
+- public group page including wall with group posts
+- SMS updates/notifications
+- public activity link
+- contact group through a form on their page, going to e-mail
+- making things public, from member's and non-member's perspective
+
+One thing I believe we missed at this point, which we came back to later, was to research existing tools and platforms out there that might be a solution to our challenge. We've been aware of many in general so we did come back to some for design inspiration.
+
+![sketch sms updates](https://community.karrot.world/uploads/default/original/1X/53522b230b3827453b787f222eb057a9b9f8b092.jpeg)
+
+### Decide
+
+There was quite some back and forth here to be honest. We tried to extract the most interesting things from each sketch and were stuck for a while wondering whether to include all the ideas in a single prototype in order to present it to the groups using Karrot, or to focus on a single one. We also did a **storyboard** in which we sketched out different scenarios, like somebody wanting to donate food to a group. While it is usually meant to support the prototype, we actually used in a presentation at Karrot Days when we decided at the end which idea to focus on.
+
+During Karrot Days we had a very valuable opportunity to present to others the work we've done on the topic so far and get some feedback. It felt in line with group's experiences so it was very satisfactory in this sense. At the end we did a quick pool voting on the main ideas and the "winner" was public activities with share link, but I believe we could've probably done better decision-making process if we had some more time to discuss and reach a decision through some kind of consensus.
+
+### Prototype and testing
+
+Prototyping for Karrot in our first experience with the design process was an exceptionally high-fidelity prototype that Nick coded using the Quasar Framework used on Karrot. This time around we didn't need nor had the time to be so advanced, so I basically searched free and open-source tools for mockups and prototyping and found this really nice one called [Penpot](https://design.penpot.app), which is web-based, requiring no installation and allowing teams to collaborate real-time and share the prototype.
+
+At the moment of writing only two people from different Karrot groups have tested the prototype so far and some minor improvements were found to be made. One more should be sufficient and at least a couple more to get the perspective from people who've never seen Karrot before.
+
+![penpot prototype public_activities|690x380](https://community.karrot.world/uploads/default/original/1X/acd7de7ae0bad5e366ede3c28c2e33efacbadc48.jpeg)
+
+
+[Click here](https://design.penpot.app/#/view/f6e8f930-10e2-11ed-9552-f940e3befd53?page-id=f6e8f931-10e2-11ed-9552-f940e3befd53&section=interactions&index=0&share-id=e4dfb120-180d-11ed-817f-f940e3befd53) if you want to see and test the prototype
+
+## Minimum viable ~~product~~ feature
+
+Given the constraints of funding on the one hand and of developing capacity on the other, we will implement first the bare minimum version of the prototype, displaying only information for an activity to the public with no possibility to sign up for it. Then we'll implement the rest once we figure out the tricky bits of offering an easy way to join an activity without much of the hassle to create an account. Other ideas will be kept on a shiny box to take them out later when time's ripe.
+
+Here's our nice looking feature after merged (the public view at least):
+![Screenshot public activities merged|459x500](https://community.karrot.world/uploads/default/original/1X/f96b542a6371c7ec3a5f81170afeee86748cf3b6.jpeg)
+
+
+## Some reflections
+
+Considering the amount of time and effort put into this process I'd describe it using the Swedish word *lagom*, which means something like just enough, not too little and not too much. I didn't feel like it dragged on for a long time like the previous one and neither that it was too quick and not enough for a good concept to take shape. Looking only at the final result though - the design itself in the form of a prototype - it might seem too much. But that would be from a very productivist perspective. We do obviously want to make the best use of our time and energy to achieve something, especially in a project that is much dependent on internal drivers of motivation from the people involved in it with limited time. But sometimes the best use of time and energy does not translate directly into a finished product or some kind of artifact. In fact, all the other non-tangible values created during the process were, in my opinion, very interesting discussions and insights into how people organise a group, how they reach out to people outside that group and which tools they use. Also valuable was the relationships and bonds strengthened throughout the meetings and the process of community building, which is valuable in and of itself, and should also reflect on the whole of Karrot a project, including its future designs and developments. A good energy and cooperation within a group of people is key.
+
+There's also a very interesting aspect of democratizing design there, opening up the participation in conception and design of an idea to people who do not have the technical expertise in terms of being able to program or design professionally. These people do have however the "user" expertise that could feed into creating a new feature useful for them. We're only beginning to explore and lead these processes so we'll probably have more to tell in the future.
+
+## Tools used
+
+[Jitsi](https://meet.jit.si/) for regular meetings and co working
+[BigBlueButton](https://bigbluebutton.org/) during Karrot days for video meeting and presentation
+[Excalidraw](https://excalidraw.com/) for mindmap, sketching and storyboard
+Paper and pen for sketching 📝
+[Penpot](https://design.penpot.app) for prototyping
+
+## Participants
+
+You don't need a big team to conduct the process, but you do need varied input and feedback experts on the ground, that is, the community organisers using Karrot. We had three regular participants: @bruno , @Vasilis_Ntouros and @nicksellen . Occasionally we had the very valuable contribution of the community of Karrot users and non-users alike: @nathalie , @dave_goodman_jr , John, @danveg and @swiatekto 
