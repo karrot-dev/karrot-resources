@@ -1,0 +1,1 @@
+This is a tex file, you'll need a LaTeX development environment (e.g. Texmaker) in order to open, edit, run the file.
